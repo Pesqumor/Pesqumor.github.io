@@ -24,3 +24,21 @@ jekyll serve -->  Configure le serveur sur le localhost
  
 => Dans l'url du navigateur : http://localhost:4000 
 
+
+Configuration GIT:(https://pages.github.com/)
+
+Clonage:
+git clone https://github.com/username/username.github.io
+
+Création d'un index dans dossier github:
+cd username.github.io
+echo "Hello World" > index.html
+
+
+Push it:
+git add --all
+git commit -m "Initial commit"
+git push -u origin master
+
+
+
