@@ -36,7 +36,7 @@ echo "Hello World" > index.html
 
 
 Push it:
-git add --all
+git add .
 git commit -m "Initial commit"
 git push -u origin master
 
