@@ -3,4 +3,4 @@ title: Accueil
 layout: default
 ---
 
-##Contenu##
+##Contenu de la page du site##
