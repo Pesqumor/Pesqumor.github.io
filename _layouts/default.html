@@ -9,7 +9,14 @@
 	<body>
 		{% include header.html %} 
 			<main>	
-			{{content}}		
+			{{content}}
+			
+			{% for post in site.posts %}
+			<li>{{ post.article1 }}</li>
+			<li>{{ post.article2 }}</li>
+			<li>{{ post.article3 }}</li>
+			<li>{{ post.article4 }}</li>
+  			{% endfor %}		
 			</main>
 		{% include footer.html %} 
 	</body>
