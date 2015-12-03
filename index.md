@@ -1,5 +1,5 @@
 ---
-title: Accueil
+title: Accueil en Include
 layout: default
 ---
 
