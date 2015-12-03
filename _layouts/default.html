@@ -12,6 +12,7 @@
 			{{content}}
 				<ul>
 					{% for post in site.posts %}
+
 					{% if post.categories == "true" %}
 					
 					<li><a href="{{ post.url }}" target="blank">{{ post.title }}</a></li><br/>
