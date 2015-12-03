@@ -13,8 +13,8 @@
 				<ul>
 					{% for post in site.posts %}
 					
-					<li>{{ post.title }}</li>
-						{{ post.content }<br/>
+					<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+						
 					
   					{% endfor %}
 				</ul>
