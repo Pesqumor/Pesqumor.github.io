@@ -12,11 +12,18 @@
 			{{content}}
 			
 			{% for post in site.posts %}
-			{{ post.article1 }}
-			{{ post.article2 }}
-			{{ post.article3 }}
-			{{ post.article4 }}
-			{{ post.excerpt }}
+			<li>
+			<a href="{{ post.url }}">{{ post.article1 }}</a>
+			</li>
+			<li>
+			<a href="{{ post.url }}">{{ post.article2 }}</a>
+			</li>
+			<li>
+			<a href="{{ post.url }}">{{ post.article3 }}</a>
+			</li>
+			<li>
+			<a href="{{ post.url }}">{{ post.article4 }}</a>
+			</li>
   			{% endfor %}		
 			</main>
 		{% include footer.html %} 
