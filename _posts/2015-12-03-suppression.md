@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Comment se débarasser définitivement de Jekyll
-categories: true
+categorie: true
 ---
 
 #### Tuto: comment supprimé Jekyll et paramètré un blog
