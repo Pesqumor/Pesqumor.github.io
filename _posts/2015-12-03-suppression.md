@@ -3,5 +3,5 @@ layout: post
 title: Comment se débarasser définitivement de Jekyll
 ---
 
-#### Tuto: comment installé Jekyll et paramètré un blog
+#### Tuto: comment supprimé Jekyll et paramètré un blog
 Informer vous sur GitHub, et sur Jekyll avec la documentation!
