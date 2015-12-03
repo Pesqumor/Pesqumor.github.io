@@ -11,13 +11,11 @@
 			<main>	
 			{{content}}
 				<ul>
-					{% if post.categorie == "true" %}
 					{% for post in site.posts %}
 					
 					<li><a href="{{ post.url }}" target="blank">{{ post.title }}</a></li><br/>
 		
   					{% endfor %}
-					{% endif %}
 				</ul>
 			</main>
 		{% include footer.html %} 
