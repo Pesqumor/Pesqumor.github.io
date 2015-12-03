@@ -13,15 +13,8 @@
 				<ul>
 					{% for post in site.posts %}
 					
-					{{ post.install }}
+					<li>{{ post.title }}</li>
 					
-					{{ post.gestion }}
-					
-					{{ post.debogue }}
-					
-					{{ post.suppression }}
-			
-
 					{{ post.excerpt }}
   					{% endfor %}
 				</ul>
