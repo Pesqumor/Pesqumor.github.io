@@ -15,27 +15,24 @@
 					<li>
 						<a href="{{ post.url }}">{{ post.install }}</a>
 					</li>
-					{{ post.excerpt }}
-  					{% endfor %}
+					
 
-					{% for post in site.posts %}	
+					
 					<li>
 						<a href="{{ post.url }}">{{ post.gestion }}</a>
 					</li>
-					{{ post.excerpt }}
-  					{% endfor %}
+					
 
-					{% for post in site.posts %}
+					
 					<li>
 						<a href="{{ post.url }}">{{ post.debogue }}</a>
 					</li>
-					{{ post.excerpt }}
-  					{% endfor %}
+					
 
-					{% for post in site.posts %}
 					<li>
 						<a href="{{ post.url }}">{{ post.suppression }}</a>
 					</li>
+
 					{{ post.excerpt }}
   					{% endfor %}
 				</ul>
