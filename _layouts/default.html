@@ -41,19 +41,17 @@
             </div>
 		
 			<main>	
-				<div class="col-md-4 img-portfolio">
-                			<a href="{{ post.url }}">
+				{% for post in site.posts %} 
+				<div class="col-md-4 img-portfolio">               			
+					<a href="{{ post.url }}">
                     			<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
                 			</a>
                 			<h3>
-                    			<a href="{{ post.url }}" target="blank">
-					{% for post in site.posts %}
-					{{ post.title }}
-					{% endfor %}
-					</a>
+                    			<a href="{{ post.url }}" target="blank">{{ post.title }}</a>
                 			</h3>
                 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
             			</div>
+				{% endfor %}
 			</main>
 		{% include footer.html %} 
 	</body>
