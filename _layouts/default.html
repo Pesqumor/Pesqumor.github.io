@@ -4,6 +4,16 @@
 
 	<head>
 		<title>{{site.title}}</title>
+		
+		 <!-- Bootstrap Core CSS -->
+    		<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    		<!-- Custom CSS -->
+    		<link href="css/modern-business.css" rel="stylesheet">
+
+    		<!-- Custom Fonts -->
+    		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	
 	</head>
 
 	<body> 
@@ -22,7 +32,7 @@
 	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="about.html">Accueil</a>
+                        <a href="index.html">Accueil</a>
                     </li>
                     <li>
                         <a href="contact.html">Contact</a>
@@ -31,14 +41,19 @@
             </div>
 		
 			<main>	
-			{{content}}
-				<ul>
+				<div class="col-md-4 img-portfolio">
+                			<a href="{{ post.url }}">
+                    			<img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
+                			</a>
+                			<h3>
+                    			<a href="{{ post.url }}" target="blank">
 					{% for post in site.posts %}
-					
-					<li><a href="{{ post.url }}" target="blank">{{ post.title }}</a></li><br/>
-		
-  					{% endfor %}
-				</ul>
+					{{ post.title }}
+					{% endfor %}
+					</a>
+                			</h3>
+                			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+            			</div>
 			</main>
 		{% include footer.html %} 
 	</body>
