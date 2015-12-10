@@ -41,18 +41,19 @@
             </div>
 		
 			<main>	
-				{% for post in site.posts %} 
-				<div class="container">				
+			<div class="container">				
 				<div class="row">
+				{% for post in site.posts %} 
+				
             				<div class="col-md-4 img-portfolio">
                 			<h3>
                    			 <a href="{{ post.url }}">{{ post.title }}</a>
                 			</h3>
                 			<p>{{ post.content }}</p>
             				</div>
-       				 </div>
-				</div>
 				{% endfor %}
+				</div>
+			</div>
 			</main>
 		{% include footer.html %} 
 	</body>
